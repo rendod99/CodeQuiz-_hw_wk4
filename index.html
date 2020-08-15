@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <a href="highscore.html">view highscores</a>
+    </nav>
+    <div>
+      <h1 id="timer" class="hide" ></h1>
+    </div>
+    
+    <div class="card hide" id="questionsCard" style="width: 18rem;">
+        <div class="card-header" id="question">
+          Question:
+        </div>
+        <ul class="list-group list-group-flush" id="answer-buttons">
+          <li class="list-group-item"> <button class="btn">answer 1</button></li>
+          <li class="list-group-item"> <button class="btn">answer 2</button></li>
+          <li class="list-group-item"> <button class="btn">answer 3</button></li>
+          <li class="list-group-item"> <button class="btn">answer 4</button></li>
+        </ul>
+      </div>
+    <div>
+      <button id ="startBtn" class="start-btn btn">Start Game</button> 
+      <button id ="nextBtn" class="next-btn btn hide">Next</button>
+  </div>
+</body>
+<script src="codeQuiz.js"></script>
+</html>

@@ -1,0 +1,15 @@
+.hide{
+    display:none;
+}
+
+
+
+
+#startBtn{
+    background-color: green;
+    color:white;
+}
+.btn{
+    background-color: blue;
+    color:white;
+}
