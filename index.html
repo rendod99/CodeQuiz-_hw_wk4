@@ -9,7 +9,8 @@
     <link href="style.css" rel="stylesheet">
     
 </head>
-<body>
+<body class= "container">
+  
   <h1 id = "gameOver" class = "hide">Game Over!!!</h1>
   
     <div>
@@ -31,7 +32,18 @@
       <button id ="startBtn" class="start-btn btn">Start Game</button> 
       <button id ="nextBtn" class="next-btn btn hide">Next</button>
   </div>
+  <div>
   <h1 id = "score" class = "hide">You Answered 0 Correct!</h1>
+  </div>
+  <div id = "initials" class = "hide">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Enter Initials Here" aria-label="Users Initials" aria-describedby="button-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+    </div>
+  </div>
+</div>
+
 </body>
 <script src="codeQuiz.js"></script>
 </html>

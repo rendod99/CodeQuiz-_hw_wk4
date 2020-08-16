@@ -9,6 +9,7 @@ var questionElement = document.querySelector("#question");
 var answerButtonsElement = document.querySelector("#answer-buttons");
 let shuffledQuestions, currentQuestonIndex
 var gameOverEl = document.querySelector("#gameOver")
+var initialsEl = document.querySelector("#initials")
 var score = document.querySelector("#score")
 var total = 1;
 
@@ -116,6 +117,7 @@ function selectAnswer(e){
     } else{
         //startBtn.innerText = "Restart"
         startBtn.classList.remove("hide")
+        initialsEl.classList.remove("hide")
         questionCardElement.classList.add("hide")
         timerEl.classList.add("hide")
     }
