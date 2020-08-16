@@ -10,13 +10,19 @@ var answerButtonsElement = document.querySelector("#answer-buttons");
 let shuffledQuestions, currentQuestonIndex
 var gameOverEl = document.querySelector("#gameOver")
 var initialsEl = document.querySelector("#initials")
+var text = document.querySelector("#textInput")
+var button = document.querySelector("#button-addon2")
 var score = document.querySelector("#score")
 var total = 1;
 
 
-
-
 // Event Listeners
+const saveToLocalStorage = () => {
+    localStorage.setItem('textinput', text.value )
+}
+
+button.addEventListener("click", saveToLocalStorage)
+
 startBtn.addEventListener("click",() => {    
     startGame();
     updateTimer();
